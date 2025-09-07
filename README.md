@@ -19,3 +19,11 @@ My LunaGameBackend is a RESTful API built with **Node.js**, **Express**, and **P
 
 Once the app is running, you can access the Swagger UI at:
 
+https://my-app-winter-snowflake-5879.fly.dev/api/api-docs/
+
+create account at
+https://my-app-winter-snowflake-5879.fly.dev/users
+sign in at
+https://my-app-winter-snowflake-5879.fly.dev/login
+
+
