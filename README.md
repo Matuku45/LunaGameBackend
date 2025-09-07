@@ -25,5 +25,6 @@ create account at
 https://my-app-winter-snowflake-5879.fly.dev/users
 sign in at
 https://my-app-winter-snowflake-5879.fly.dev/login
+https://flask-backend-little-sun-657.fly.dev/
 
 Ive used fly.io to deploy it
