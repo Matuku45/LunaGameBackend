@@ -65,7 +65,7 @@ def swagger_json():
             "version": "1.0",
             "description": "CRUD API for Player Management and Sessions"
         },
-        "schemes": ["http"],
+        "schemes": ["http", "https"],  # <-- comma added here
         "paths": {
             "/players": {
                 "get": {
@@ -105,8 +105,6 @@ def swagger_json():
                     "responses": {"200": {"description": "Player deleted"}}
                 }
             },
-
-            # --------- Sessions CRUD ---------
             "/sessions": {
                 "get": {
                     "summary": "Get all sessions",
@@ -176,8 +174,6 @@ def swagger_json():
                     "password": {"type": "string"}
                 }
             },
-
-            # Sessions Definitions
             "Session": {
                 "type": "object",
                 "properties": {
@@ -186,7 +182,7 @@ def swagger_json():
                     "role": {"type": "string"},
                     "game_type": {"type": "string"},
                     "bet_type": {"type": "string"},
-                    "features": {"type": "string"},
+                    "features": {"type": "string"}
                 }
             },
             "SessionCreate": {
@@ -196,10 +192,9 @@ def swagger_json():
                     "role": {"type": "string"},
                     "game_type": {"type": "string"},
                     "bet_type": {"type": "string"},
-                    "features": {"type": "string"},
-                  
+                    "features": {"type": "string"}
                 },
-                "required": ["name", "role", "game_type", "bet_type", "time"]
+                "required": ["name", "role", "game_type", "bet_type"]
             },
             "SessionUpdate": {
                 "type": "object",
