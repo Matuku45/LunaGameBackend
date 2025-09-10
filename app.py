@@ -6,7 +6,8 @@ from psycopg2.extras import RealDictCursor
 import bcrypt
 
 app = Flask(__name__)
-CORS(app)  # Allow all CORS origins
+CORS(app, resources={r"/*": {"origins": "*"}})
+
 
 # ------------------- Database Connection -------------------
 def get_db_connection():
