@@ -20,7 +20,7 @@ def get_db_connection():
     )
 
 # ------------------- Swagger UI Setup -------------------
-SWAGGER_URL = '/swagger'  # UI path
+API_URL = 'https://lunagamebackend-1.onrender.com/swagger.json'
 API_URL = '/swagger.json'  # JSON path
 swaggerui_blueprint = get_swaggerui_blueprint(
     SWAGGER_URL, API_URL,
